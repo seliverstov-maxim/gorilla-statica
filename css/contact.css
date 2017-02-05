@@ -1,0 +1,66 @@
+.call-me {
+  background-image: url('../img/call_me2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  width: 40%;
+  height: 300px;
+  float: left;
+  overflow: auto;
+}
+
+.contacts-wrapper {
+  font-size: 34px;
+  line-height: 60px;
+  font-family: 'ZhiznRegular';
+  text-align: center;
+  overflow: auto;
+  margin: 50px 0 100px 0;
+}
+
+.contacts-wrapper a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-form-wrapper {
+  float: left;
+  width: 60%;
+  margin-bottom: 100px;
+}
+
+.contact-form-wrapper h2 {
+  font-family: 'ZhiznRegular';
+}
+
+.contact-form-wrapper .form {
+  margin: 0 auto;
+  width: 340px;
+}
+
+.contact-form-wrapper .form input, .contact-form-wrapper .form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.contact-form-wrapper .form .submit-btn {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contact-form-wrapper .form input:hover, .contact-form-wrapper .form textarea:hover {
+  border: 1px solid #000;
+}
+
+/*.contact-form-wrapper .form input {
+  height: 30px;
+}*/
+
+.contact-form-wrapper .form textarea {
+  height: 100px;
+}

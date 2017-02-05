@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "ZhiznRegular";
+    src: url("../fonts/ZhiznRegular.eot");
+    src: url("../fonts/ZhiznRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ZhiznRegular.woff") format("woff"),
+    url("../fonts/ZhiznRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+body {
+  background-image: url('../img/bg_header.jpg');
+  background-repeat: repeat;
+  line-height: 1;
+  min-width: 960px;
+  padding: 0;
+  margin: 0;
+}
+
+.body-wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.leaves {
+  width: 100%;
+  height: 100px;
+  background-image: url('../img/leaves.png');
+  background-repeat: repeat-x;
+  margin-bottom: 20px;
+}
+
+.left-monkey {
+  background-image: url('../img/superman_as_gorilla.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  width: 40%;
+  height: 300px;
+  float: left;
+  margin-top: 125px;
+}
+
+.portfolio-list {
+  overflow: auto;
+}
+
+.portfolio-list .portfolio-border {
+  background-image: url('../img/portfolio_border.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  padding: 40px 20px;
+}
+
+.portfolio-list .example {
+  float: left;
+  margin: 10px;
+}
+
+.portfolio-list .example .content {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 370px;
+  height: 230px;
+}
+
+.description {
+  overflow: auto;
+}
+
+.bubble {
+  background-image: url('../img/bubble.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  padding: 30px 130px;
+  float: left;
+  font-family: 'Roboto', sans-serif;
+  margin-left: -80px;
+  line-height: 1.4;
+}
+
+.bubble a {
+  color: #000;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  overflow: auto;
+  margin: 0;
+}
+
+.menu li {
+  height: 90px;
+  background: url(../img/nav-sprite.png);
+  float: left;
+  margin: 20px 20px 0px 0;
+}
+
+.menu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.menu li.logo {
+  background-image: url('../img/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100px;
+  height: 100px;
+}
+
+.menu li.portfolio {
+  width: 306px;
+  background-position: 0 -90px;
+}
+
+.menu li.portfolio:hover {
+  width: 306px;
+  background-position: -306px -90px;
+}
+
+.menu li.about {
+  width: 179px;
+  background-position: 0 -180px;
+}
+
+.menu li.about:hover {
+  width: 179px;
+  background-position: -179px -180px;
+}
+
+.menu li.contact {
+  width: 239px;
+  background-position: 0 -270px;
+}
+
+.menu li.contact:hover {
+  width: 239px;
+  background-position: -239px -270px;
+}
+
+.bottom-wrapper {
+  width: 100%;
+}
+
+.bottom-wrapper .border {
+  width: 100%;
+  height: 50px;
+  background-image: url('../img/bg_paper.png');
+  background-repeat: repeat-x;
+}
+
+.bottom-wrapper > .content {
+  width: 100%;
+  min-height: 50px;
+  background-color: #fff;
+  padding-top: 50px;
+  overflow: auto;
+}

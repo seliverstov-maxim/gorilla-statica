@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Горилла продакшн</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/inputmask.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <div class="top">
+        <ul class="menu">
+          <li class="logo"><a href="index.html"></a></li>
+          <li class="portfolio"><a href="portfolio.html"></a></li>
+          <li class="about"><a href="about.html"></a></li>
+          <li class="contact"><a href="contacts.html"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="leaves"></div>
+    <div class="body-wrapper">
+      <div class="description">
+        <div class="contacts-wrapper">
+          <div class="company">ООО "ЭРИКСНЕТ"</div>
+          <div class="address">432063, Россия, г. Ульяновск, ул. Орлова 41</div>
+          <div class="tel"><a href="tel:+78422505088">+7 (8422) 50-50-88</a></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="bottom-wrapper">
+      <div class="border"></div>
+      <div class="content">
+        <div class="body-wrapper">
+          <div class="call-me"></div>
+          <div class="contact-form-wrapper">
+            <div class="form">
+              <h2>Мы перезвоним</h2>
+              <form method="POST" action="http://formspree.io/maxim.web.developer@gmail.com">
+                <input type="hidden" name="_subject" value="Заявка с Gorilla-porduction" />
+                <input type="tel" name="tel" placeholder="Ваш номер" />
+                <textarea name="comment" placeholder="Коментарий (не обязательно)"></textarea>
+                <input type="submit" value="Отправить" class="submit-btn"/>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // $(document).on('submit', 'form', function(e){
+      //   var target = $(e.currentTarget);
+      //   console.log(e);
+      //   console.log(target);
+      //   console.log(target.attr('action'));
+      //   $.ajax({
+      //     url: target.attr('action'),
+      //     headers: {'X-Alt-Referer': 'localhost' },
+      //     method: "POST",
+      //     data: {message: "hello!"},
+      //     dataType: "json",
+      //     success: function() { target.append('<span class="success-notice>Заявка отправлена</span>')}.bind(this)
+      //   });
+        return false
+      })
+    </script>
+  </body>
+</html>
