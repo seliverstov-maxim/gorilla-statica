@@ -40,6 +40,7 @@
           <div class="contact-form-wrapper">
             <div class="form">
               <h2>Мы перезвоним</h2>
+              <div class="success-notice" data-role="success-notification">Заявка отправлена</div>
               <form method="POST" action="http://formspree.io/maxim.web.developer@gmail.com">
                 <input type="hidden" name="_subject" value="Заявка с Gorilla-porduction" />
                 <input type="tel" name="tel" placeholder="Ваш номер" />
@@ -59,11 +60,10 @@
         console.log(target.attr('action'));
         $.ajax({
           url: target.attr('action'),
-          headers: {'X-Alt-Referer': 'localhost' },
           method: "POST",
-          data: {message: "hello!"},
+          data: getFormData(target),
           dataType: "json",
-          success: function() { target.append('<span class="success-notice>Заявка отправлена</span>')}.bind(this)
+          success: function() { target.find('*[data-role="success-notification"]').show()}.bind(this)
         });
         return false
       })

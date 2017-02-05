@@ -64,3 +64,13 @@
 .contact-form-wrapper .form textarea {
   height: 100px;
 }
+
+.success-notice {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #dff0d8;
+  color: #3c763d;
+  padding-right: 35px;
+  display: none;
+
+}
