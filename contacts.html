@@ -40,8 +40,8 @@
           <div class="contact-form-wrapper">
             <div class="form">
               <h2>Мы перезвоним</h2>
-              <div class="success-notice" data-role="success-notification">Заявка отправлена</div>
               <form method="POST" action="http://formspree.io/maxim.web.developer@gmail.com">
+                <div class="success-notice" data-role="success-notification">Заявка отправлена</div>
                 <input type="hidden" name="_subject" value="Заявка с Gorilla-porduction" />
                 <input type="tel" name="tel" placeholder="Ваш номер" />
                 <textarea name="comment" placeholder="Коментарий (не обязательно)"></textarea>
@@ -63,7 +63,9 @@
           method: "POST",
           data: getFormData(target),
           dataType: "json",
-          success: function() { target.find('*[data-role="success-notification"]').show()}.bind(this)
+          success: function() {
+            target.find('*[data-role="success-notification"]').show();
+          }.bind(this)
         });
         return false
       })
