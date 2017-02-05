@@ -52,19 +52,19 @@
       </div>
     </div>
     <script>
-      // $(document).on('submit', 'form', function(e){
-      //   var target = $(e.currentTarget);
-      //   console.log(e);
-      //   console.log(target);
-      //   console.log(target.attr('action'));
-      //   $.ajax({
-      //     url: target.attr('action'),
-      //     headers: {'X-Alt-Referer': 'localhost' },
-      //     method: "POST",
-      //     data: {message: "hello!"},
-      //     dataType: "json",
-      //     success: function() { target.append('<span class="success-notice>Заявка отправлена</span>')}.bind(this)
-      //   });
+      $(document).on('submit', 'form', function(e){
+        var target = $(e.currentTarget);
+        console.log(e);
+        console.log(target);
+        console.log(target.attr('action'));
+        $.ajax({
+          url: target.attr('action'),
+          headers: {'X-Alt-Referer': 'localhost' },
+          method: "POST",
+          data: {message: "hello!"},
+          dataType: "json",
+          success: function() { target.append('<span class="success-notice>Заявка отправлена</span>')}.bind(this)
+        });
         return false
       })
     </script>
